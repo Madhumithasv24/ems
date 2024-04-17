@@ -1,0 +1,48 @@
+<!-- <table border ="1">
+    <thead>
+        <tr>
+            <th>First_Name</th>
+            <th>Last_Name</th>
+            <th>email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <ng-container>
+            <tr *ngFor ="let d of employeeData">
+                <td>{{d.first_name}}</td>
+                <td>{{d.last_name}}</td>
+                <td>{{d.email}}</td>
+                 //d.whatever key you have given in entity 
+            </tr>
+        </ng-container>
+    </tbody>
+</table>
+ -->
+
+
+ <div class="searchbox">
+    <input  type="text"[disabled]="!showusers&& !showtask&&!showadmin"  placeholder="search"/>
+    <!-- <input type="text"[disabled]="!showtask" placeholder="search"/> -->
+</div>
+  <div class="clicks">
+    <button type="submit" (click)="getuser()">Users</button>
+    <button type="submit" (click)="gettask()">Task</button>
+    <button type="submit" (click)="resetData()">reset data</button>
+  </div>
+  
+<ng-container *ngIf="showadmin">
+  <ng-container *ngIf="showusers">
+  <app-details [id]="20" [userdatas$]= "userdetails$" (detailsEmit)="viewData ($event)"> </app-details>
+  </ng-container> 
+</ng-container>
+   <!-- child in left side=parent -->
+
+<ng-container *ngIf="showtaskformanager">
+  <ng-container *ngIf="showtask">
+    <app-taskdetails  [taskdata$]="taskdetails$"  (taskdetailEmit)="viewtask ($event) "></app-taskdetails>
+  </ng-container>
+</ng-container>
+
+
+
+    

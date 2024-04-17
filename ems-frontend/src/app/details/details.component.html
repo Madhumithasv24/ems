@@ -1,0 +1,22 @@
+<ng-container>
+    <table border="1">
+        <thead>
+            <th>Employee Id</th>
+            <th>Employee name</th>
+            <th>Employee email</th>
+            <th>Employee role</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let users of user">
+                <td>{{users.id}}</td>
+                <td>{{users.name}}</td>
+                <td>{{users.email}}</td>
+                <td>{{users.roleName}}</td>
+                <td>
+                    <input type="submit" value="edit"(click)="editData(users)"/>
+                    
+                </td>
+            </tr>
+        </tbody>
+    </table> 

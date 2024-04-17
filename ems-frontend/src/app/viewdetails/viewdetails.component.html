@@ -1,0 +1,21 @@
+<p>viewdetails works!</p>
+
+<form [formGroup]="detailsFormGroup" (ngSubmit)="onSubmit()">
+ <div class="form-control">
+    <input class="text" formControlName="id" placeholder="id"/>
+</div>
+
+<div class="form-control">
+    <input class="text" formControlName="name" placeholder="developer name"/>
+</div>
+
+<div class="form-control">
+    <input class="text" formControlName="email" placeholder="email"/>
+</div>
+<div class="form-control">
+    <input class="text" formControlName="password" placeholder="password"/>
+</div>
+<div class="form-control">
+    <input type="submit" value="update task details "/>
+</div>
+</form>

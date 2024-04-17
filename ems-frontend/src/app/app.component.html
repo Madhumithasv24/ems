@@ -1,0 +1,67 @@
+<!-- <h1 *ngIf="temp>10;else nodata">{{temp}}</h1>
+<ng-template #nodata><h1>greater</h1></ng-template>
+<div>
+name:{{temp1.name}}
+</div>
+
+<div>
+class:{{temp1.class}}
+
+</div>
+
+<h1>{{(temp>10)?temp:"no data"}}</h1>
+
+<div *ngFor="let d of data; let i=index">{{d}}-{{i}}</div> -->
+<!-- {{d+"-"+i}} -->
+
+<!-- <table border="1">
+    <thead>
+        <th>Employee No</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Class</th>
+        <th>Action</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employeedetails;let i=index">
+            <td>{{i+1}}</td>
+            <td>{{employee.name}}</td>
+            <td>{{employee.age}}</td>
+            <td>{{employee.class}}</td>
+            <td>
+                <input type="submit" (click)="getEmployeeDetails (employee)" value="Get Details"/></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <ng-container *ngIf = "empData">
+        <h3>Selected emp : {{empData.name}}</h3>
+        <div>Name: {{empData.name}}</div>
+        <div>Age: {{empData.age}}</div>
+        <div>Class: {{empData.class}}</div>
+    </ng-container>
+
+    <table border="1">
+        <thead>
+            <td>Product No</td>
+            <td>product Name</td>
+            <td>description</td>
+            <td>location</td>
+            <td>status</td>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products; let i=index">
+                <td>{{i+1}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.description}}</td>
+                <td>{{product.location}}</td>
+                <td>{{product.status}}</td>
+            </tr>
+
+               
+            </tbody>
+        </table>
+
+         -->
+
+<router-outlet></router-outlet>    

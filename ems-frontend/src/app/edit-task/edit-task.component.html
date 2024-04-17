@@ -1,0 +1,25 @@
+<p>edit-task works!</p>
+
+
+<form [formGroup]="taskFormGroup" (ngSubmit)="onUpdate()">
+ <div class="form-control">
+    <input class="text" formControlName="developerId" placeholder="developer Id"/>
+</div>
+
+<div class="form-control">
+    <input class="text" formControlName="taskId" placeholder="task Id "/>
+</div>
+
+<div class="form-control">
+    <input class="text" formControlName="taskName" placeholder="task Name"/>
+</div>
+<div class="form-control">
+    <input class="text" formControlName="taskDesc" placeholder="task Desc"/>
+</div>
+<div class="form-control">
+    <input class="text" formControlName="taskStatus" placeholder="taskStatus"/>
+</div>
+<div class="form-control">
+    <input type="submit" value="update task details "/>
+</div>
+</form>

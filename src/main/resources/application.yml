@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    name: EMS
+    url: jdbc:postgresql://localhost:5432/ems
+    username: postgres
+    password: Sasikala@24
+    driver-class-name: org.postgresql.Driver
+
+    hikari:
+      ConnectionTimeout: 20000
+      idleTimeout: 600000
+      maxLifeTime: 1800000
+      maximum-pool-size: 20
+      register-mbeans: true
+jpa:
+  properties:
+    hibernate:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+
+config:
+name: expeditors
+value: 187387

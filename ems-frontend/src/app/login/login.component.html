@@ -1,0 +1,20 @@
+<p>login works</p>
+
+<!--<label>Username</label>
+<input type ="text" placeholder="Enter the username"/>
+<label>Password</label>
+<input type ="password" placeholder="Enter the password"/>
+<input type ="button" value="Submit"/>-->
+<div class="container">
+  <form [formGroup] = "loginFormGroup">
+    <div class = "form-control">
+      <input type="text" formControlName = "userName" type="text" placeholder="username"/>
+    </div>
+    <div class = "form-control">
+      <input type="text " formControlName = "password" type="password" placeholder="password"/>
+    </div>
+    <div class = "form-control">
+      <input type = "submit" (click)="validateLogin()" value= "Login"/>
+    </div>
+</form>
+</div>

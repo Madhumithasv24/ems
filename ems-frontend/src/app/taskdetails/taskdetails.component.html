@@ -1,0 +1,27 @@
+<p>taskdetails works!</p>
+
+<ng-container>
+    <table border="1">
+        <thead>
+            <th>developer id </th>
+            <th>task id</th>
+             <th>task name</th>
+            <th>task desc</th>
+            <th> task status</th>
+            <th>Action</th>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let tasks of task">
+                <td>{{tasks.developerId}}</td>
+                <td>{{tasks.taskId}}</td>
+                <td>{{tasks.taskName}}</td>
+                <td>{{tasks.taskDesc}}</td>
+                <td>{{tasks.taskStatus}}</td>
+                <td>
+                    <input type="submit" value="edit"(click)="editData(tasks)"/>
+                    
+                </td>
+            </tr>
+        </tbody>
+    </table> 
